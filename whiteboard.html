@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <script>
+        function hideButton() {
+        var button = document.getElementById("button");
+        var text = document.getElementById("welcome");
+        const canvas = document.createElement("canvas");
+        const erase = document.createElement("button");
+        
+        text.style.display = "none";
+        button.style.display = "none";
+
+        canvas.id = "canvas";
+        canvas.width = 1100;
+        canvas.height = 500;
+        document.getElementById("canvasPos").appendChild(canvas);
+    
+        erase.id = "eraseButton";
+        erase.textContent = "Reset Canvas";
+        document.getElementById("erasePos").appendChild(erase);
+
+        var script = document.createElement("script");
+        script.src = "boardScript.js";
+        document.getElementById("erasePos").appendChild(script);      
+    }
+    </script>
+
+    <h1 id="welcome"> Welcome</h1>
+    <div id="button-pos">
+        <button id="button" type="button" 
+        onclick="hideButton()">Start Canvas</button>
+    </div>
+    
+    <div id="canvasPos"></div>
+    <div id="erasePos"></div>
+    
+</body>
+</html>

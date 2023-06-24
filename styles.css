@@ -1,0 +1,27 @@
+#welcome{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 19%;
+        
+}
+#buttonpos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#erasePos{
+    align-content: center;
+}
+#canvasPos{
+    align-content: center;
+}
+
+#canvas {
+    border: 1px solid black;
+    
+  }
